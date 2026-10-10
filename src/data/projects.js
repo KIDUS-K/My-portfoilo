@@ -7,6 +7,15 @@ const projects = [
     github: "https://github.com/KIDUS-K/zepto-inventory-analysis",
     image: "/dashboard_screenshot.png",
   },
+
+  {
+    title: "Student Performance Analysis",
+    description:
+      "Analyzed 6,608 rows of student performance data in MySQL to identify which factors most strongly predict exam scores. Tested 7 predictors and found study hours to be the strongest (7.01-point gap between high and low groups), followed by attendance (5.93) and tutoring (4.00). Built an interactive Power BI dashboard with DAX measures to visualize the findings.",
+    tools: ["MySQL", "Power BI", "DAX"],
+    github: "https://github.com/KIDUS-K/student-performance-analysis",
+    image: "/student_dashboard.png.png",
+  },
 ];
 
 export default projects;
