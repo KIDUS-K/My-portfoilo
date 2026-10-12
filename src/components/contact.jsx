@@ -5,6 +5,7 @@ function Contact() {
     <section id="contact" className="contact">
       <h2>Contact</h2>
       <p>Let's connect. I'm open to analyst roles and freelance work.</p>
+
       <div className="social-icons">
         <a href="mailto:kidusberhanu928@gmail.com" aria-label="Email">
           <FaEnvelope />

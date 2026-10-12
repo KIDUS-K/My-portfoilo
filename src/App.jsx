@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Hero from "./components/hero";
 import About from "./components/about";
-import Skills from "./components/skills";
+import Skills from "./components/Skills";
 import Projects from "./components/projects";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "light"
+    () => localStorage.getItem("theme") || "dark"
   );
 
   useEffect(() => {
@@ -22,7 +22,21 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app">
+      <div className="bg-bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero />
       <About />
